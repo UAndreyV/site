@@ -16,15 +16,14 @@
                 <div class="header__top">
                     <div class="header__top-logo">
                         <img src="img/logo.png" alt="Логотип" width="146" height="65">
-                        <!-- <span class="header__top-name">Уразаев Андрей</span>
-                        <span class="header__top-desc">веб-разработчик полного цикла</span> -->
                     </div>
                     <nav class="header__top-menu">
                         <ul class="header__top-items">
-                            <li><a href=""> Опрос</a></li>
-                            <li><a href=""> Преимущества</a></li>
-                            <li><a href=""> Этапы работы</a></li>
-                            <li><a href=""> Ответы на вопросы</a></li>
+                            <li><a href="#quiz">Опрос</a></li>
+                            <li><a href="#get">Что Вы получите</a></li>
+                            <li><a href="#advantages">Наши преимущества</a></li>
+                            <li><a href="#stages">Этапы работы</a></li>
+                            <li><a href="#answers">Ответы на вопросы</a></li>
                         </ul>
                     </nav>
                     <a href="tel:+79998887766" class="header__top-button"></a>
@@ -39,9 +38,19 @@
                     <div class="header__info">
                         <h1 class="header__title">Сайт под ключ за <span>4&nbsp999</span> руб</h1>
                         <p>Современный инструмент для получения горячих заявок</p>
-                        <button class="button">Оставить заявку</button>
+                        <button data-popup class="button">Оставить заявку</button>
                     </div>
-                    <div class="header__foto"></div>
+                    <div class="header__image">
+                        <div class="header__image-later1"></div>
+                        <div class="header__image-later2"></div>
+                        <div class="header__image-later3"></div>
+                        <div class="header__image-later4"></div>
+                        <div class="header__image-later5"></div>
+                        <div class="header__image-later6"></div>
+                        <div class="header__image-later7"></div>
+                        <div class="header__image-later8"></div>
+                        <div class="header__image-later9"></div>
+                    </div>
                 </div>
                 <div class="header__social">
                     <ul class="header__social-items">
@@ -97,7 +106,7 @@
                     <p>Пройдите опрос и получите стоимость Вашего проекта, а также <span>беслпатный бонус</span> при
                         заказе сайта
                     </p>
-                    <button class="button">Узнать стоимость</button>
+                    <button class="button" onclick="window.location.href='#quiz'">Узнать стоимость</button>
                 </div>
             </section>
 
@@ -145,7 +154,7 @@
                 </ul>
             </section>
 
-            <section class="quiz">
+            <section class="quiz" id="quiz">
                 <div class="quiz__content container">
 
                     <form class="quiz__form" action="#">
@@ -228,70 +237,9 @@
                                         </div>
 
                                     </div>
-                                    <!-- <div class="quiz__control">
-                                        <div class="quiz__status"></div>
-                                        <button class="quiz__prev">Назад</button>
-                                        <button class="quiz__next button">Вперед</button>
-                                    </div> -->
-                                </fieldset>
-                                <!-- <fieldset class="quiz__item">
-                                    <p class="quiz__questions">Какие задачи должен решать сайт?</p>
-                                    <div class="quiz__items">
-                                        <input id="3-1" type="radio" name="questions3">
-                                        <label for="3-1">Увеличение количества продаж</label>
-                                        <input id="3-2" type="radio" name="questions3">
-                                        <label for="3-2">Увеличение узнаваемости бренда</label>
-                                        <input id="3-3" type="radio" name="questions3">
-                                        <label for="3-3">Привлечении новой аудитории</label>
-                                        <input checked id="3-4" type="radio" name="questions3">
-                                        <label for="3-4">Обеспечение заявками</label>
-                                        <input id="3-5" type="radio" name="questions3">
-                                        <label for="3-5">Проверить гипотезу</label>
-                                        <input id="3-6" type="radio" name="questions3">
-                                        <label for="3-6">Продавать прямо на сайте (оплата на сайте)</label>
-                                        <div>
-                                            <input id="3-7" type="radio" name="questions3">
-                                            <label for="3-7">Другое</label>
-                                            <input id="3-8" disabled type="text" placeholder="Ваш вариант"
-                                                maxlength="30">
-                                        </div>
-                                    </div>                                    
-                                </fieldset> -->
-                                <!-- <fieldset class="quiz__item">
-                                    <p class="quiz__questions">Количество Ваших услуг?</p>
-                                    <div class="quiz__items">
-                                        <input checked id="5-1" type="radio" name="questions5">
-                                        <label for="5-1">1</label>
-                                        <input id="5-2" type="radio" name="questions5">
-                                        <label for="5-2">2-5</label>
-                                        <input id="5-3" type="radio" name="questions5">
-                                        <label for="5-3">5-10</label>
-                                        <input id="5-4" type="radio" name="questions5">
-                                        <label for="5-4">20-50</label>
-                                        <input id="5-5" type="radio" name="questions5">
-                                        <label for="5-5">Более 50</label>
-                                    </div>                                  
-                                </fieldset> -->
 
-                                <!-- <fieldset class="quiz__item">
-                                    <p class="quiz__questions">Регион или город в котором планируете продвигаться</p>
-                                    <div class="quiz__items">
-                                        <input checked id="7-1" type="radio" name="questions7">
-                                        <label for="7-1">Вся Россия</label>
-                                        <div>
-                                            <input id="7-2" type="radio" name="questions7">
-                                            <label for="7-2">Город</label>
-                                            <input id="7-2-1" disabled type="text" placeholder="Укажите город"
-                                                maxlength="30">
-                                        </div>
-                                        <div>
-                                            <input id="7-3" type="radio" name="questions7">
-                                            <label for="7-3">Другое</label>
-                                            <input id="7-4" disabled type="text" placeholder="Ваш вариант"
-                                                maxlength="30">
-                                        </div>
-                                    </div>
-                                </fieldset> -->
+                                </fieldset>
+
                                 <fieldset class="quiz__item block-hidden">
                                     <p class="quiz__questions">Планируются ли дополнительные модули сайте?</p>
                                     <div class="quiz__items">
@@ -317,40 +265,7 @@
                                         </div>
                                     </div>
                                 </fieldset>
-                                <!-- <fieldset class="quiz__item">
-                                    <p class="quiz__questions">Потребуются ли дополнительные услуги?</p>
-                                    <div class="quiz__items">
-                                        <input id="9-1" type="radio" name="questions9">
-                                        <label for="9-1">SEO продвижение</label>
-                                        <input checked id="9-2" type="radio" name="questions9">
-                                        <label for="9-2">Яндекс директ </label>
-                                        <input id="9-3" type="radio" name="questions9">
-                                        <label for="9-3">Google AdWords</label>
-                                        <input id="9-4" type="radio" name="questions9">
-                                        <label for="9-4">Реклама в соц сетях (ВКонтакте, Facebook, Instagram)</label>
-                                        <input id="9-5" type="radio" name="questions9">
-                                        <label for="9-5">Внедрение СРМ</label>
-                                        <input id="9-6" type="radio" name="questions9">
-                                        <label for="9-6">Нет</label>
-                                        <div>
-                                            <input id="9-7" type="radio" name="questions9">
-                                            <label for="9-7">Другое</label>
-                                            <input id="9-8" disabled type="text" placeholder="Ваш вариант"
-                                                maxlength="30">
-                                        </div>
-                                    </div>                                    
-                                </fieldset> -->
-                                <!-- <fieldset class="quiz__item">
-                                    <p class="quiz__questions">Получите бонус за прохождение опроса</p>
-                                    <div class="quiz__items">
-                                        <input checked id="10-1" type="radio" name="questions10">
-                                        <label for="10-1">Бесплатная настройка Яндекс Директ</label>
-                                        <input id="10-2" type="radio" name="questions10">
-                                        <label for="10-2">Бесплатная настройка Google AdWords</label>
-                                        <input id="10-3" type="radio" name="questions10">
-                                        <label for="10-3">Домен и хостинг на 3 месяца</label>
-                                    </div>                                    
-                                </fieldset> -->
+
                                 <fieldset class="quiz__item block-hidden">
                                     <div class="quiz__items _contact">
                                         <p class="quiz__questions">Ваши контакты</p>
@@ -381,35 +296,10 @@
                 </div>
             </section>
 
-            <section class="get">
+            <section class="get" id="get">
                 <div class="get__content">
-                    <!-- <div class="get__item">
-                         <div class="get__container-img">
-                            <img src="img/tree.png" alt="Дерево">
-                        </div> 
-                        <div class="get__description">
-                            <h3>Зачем нужен сайт?</h3>
-                            <p>В настоящее время сайт это удобный способ рассказать о себе. По сути, сайт является
-                                аналогом обычной визитки, которую мы вручаем при знакомстве.</p>
 
-                            <p>
-                                Основной задачей сайт является привлечение внимания потенциальных клиентов, а также
-                                формирование положительного имиджа компании, предпринимателя или частного
-                                специалиста.
-                            </p>
-
-                            <p>
-                                На сайте размещается развернутая информация о предоставляемых услугах, размещается
-                                портфолио, прайс, а также контакты для связи. Сайт дает возможность связаться с
-                                отделом продаж или руководителем компании, а также прекрасно подходит для проведения
-                                рекламных акций
-                            </p>
-
-                        </div>
-
-                    </div> -->
                     <div class="get__item">
-                        <!-- <div class="get__container-img"></div> -->
                         <div class="get__description">
                             <h3>Что Вы получите за <span>4999</span> рублей?</h3>
                             <ul>
@@ -420,7 +310,7 @@
                                 <li><span>Формы обратной связи</span>, которые являются мощным инструментом для
                                     установления
                                     контакта между Вами и Вашими клиентами;</li>
-                                <li>Несколько <span>способов связи с клиентом.</span> У Ваших клиентов будет возможность
+                                <li>Несколько способов связи с клиентом. У Ваших клиентов будет возможность
                                     <span>позвонить</span> Вам прямо с сайта, написать в
                                     <span>WhatsApp</span>, <span>Telegram</span> или на <span>Email</span>;
                                 </li>
@@ -428,7 +318,7 @@
                                     как
                                     Яндекс и Google;</li>
                                 <li><span>Обучающее видео</span> раобте в админке сайта;</li>
-                                <li>Будут становлены <span>счетчики</span> систем аналитики <span>Яндекс.Метрика</span>
+                                <li>Будут становлены счетчики систем аналитики <span>Яндекс.Метрика</span>
                                     и <span>Google Analytics</span>;
                                 </li>
                                 <li>Регистрация и подключение <span>домена</span>;</li>
@@ -436,21 +326,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="get__item">
-                        <div class="get__container-img"></div>
-                        <div class="get__description">
-                            <h3>Какой функционал сайта возможно заказать дополнительно?</h3>
-                            <p>У вас есть возможность дополнительно разместить на сайте:</p>
-                            <ul>
-                                <li>Квиз</li>
-                                <li>Онлайн-калькулятор или онылайн-конструктор </li>
-                                <li>Онлайн-консультант </li>
-                                <li>Прайсы и каталоги</li>
-                                <li>Продавать товара и услуги с сайта с подключением онлайн оплаты</li>
-                            </ul>
-                        </div>
-
-                    </div> -->
                 </div>
 
             </section>
@@ -459,52 +334,59 @@
                 <div class="offer__content container">
                     <p>Узнайте сроки и стоимость создания Вашего сайта, а также получите <span>беслпатный бонус</span>
                         при создании сайта</p>
-                    <button class="button">Пройти опрос</button>
+                    <button class="button" onclick="window.location.href='#quiz'">Пройти опрос</button>
                 </div>
             </section>
 
-            <section class="advantages">
-                <div class="advantages__content container">
-                    <div class="advantages__info">
-                        <h2 class="advantages__title">Какие Вы получите преимущества от нашего сотруднечества?</h2>
-                        <ul class="advantages__items">
-                            <li class="advantages__item">
-                                <h3>Экономия Ваших средств</h3>
-                                <p>В отличии от веб студий мне не нужно платить зарплату сотрудникам, аренду офиса и
-                                    прочие
-                                    расходы.
-                                    Что в конечном счете отображается на стоимости создания сайта</p>
-                            </li>
-                            <li class="advantages__item">
-                                <h3>Скорость разработки</h3>
-                                <p>Проект создается и запускается в кратчайшие сроки. Все работы по созданию и настройке
-                                    сата
-                                    делаю
-                                    сам, без посредников</p>
-                            </li>
-                            <li class="advantages__item">
-                                <h3>Адаптивный сайт под любые устройства</h3>
-                                <p>Корректное отбражение Вашего сайта на любых устройства: ПК, смартфоны, планшеты</p>
-                            </li>
-                            <li class="advantages__item">
-                                <h3>Работа по договору</h3>
-                                <p>Отбражую все условия в догоре и четко им следую</p>
-                            </li>
-                            <li class="advantages__item">
-                                <h3>Поддержка</h3>
-                                <p>После завершения проекта я не пропадаю. Всегда рад дальнейем сотруднечеству и
-                                    развитию Вашего
-                                    сайта</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="advantages__foto"></div>
+            <section class="advantages" id="advantages">
+
+                <div class="advantages__info container">
+                    <h2 class="advantages__title">Какие Вы получите преимущества от нашего сотруднечества?</h2>
+                    <ul class="advantages__items">
+                        <li class="advantages__item">
+                            <h3>Экономия Ваших средств</h3>
+                            <p>В отличии от веб студий мне не нужно платить зарплату сотрудникам, аренду офиса и
+                                прочие
+                                расходы.
+                                Что в конечном счете отображается на стоимости создания сайта</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3>Скорость разработки</h3>
+                            <p>Проект создается и запускается в кратчайшие сроки. Все работы по созданию и настройке
+                                сата
+                                делаю
+                                сам, без посредников</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3>Адаптивный сайт под любые устройства</h3>
+                            <p>Корректное отбражение Вашего сайта на любых устройства: ПК, смартфоны, планшеты</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3>Работа по договору</h3>
+                            <p>Отбражую все условия в догоре и четко им следую</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3>Поддержка</h3>
+                            <p>После завершения проекта я не пропадаю. Всегда рад дальнейем сотруднечеству и
+                                развитию Вашего
+                                сайта</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3>Сайт готов к SEO</h3>
+                            <p>Подключение Яндекс.Вебмастер и Google Search Console, установка счетчиков
+                                Яндекс.Метрика и Google Analytics,
+                                заголовки заголовки H1-H6, протокол HTTPS — все это делает вас
+                                на шаг ближе к первым
+                                позициям в поисковиках. </p>
+                        </li>
+                    </ul>
+
+                    <button data-popup class="button">Оставить заявку</button>
                 </div>
 
-                <div class="advantages__foto"></div>
             </section>
 
-            <section class="stages">
+            <section class="stages" id="stages">
                 <h2 class="stages__title">Этапы работы</h2>
                 <div class="stages__content">
                     <ol class="stages__items">
@@ -541,11 +423,11 @@
                     <p>Для предварительного расчета стоимоти Вашего сайта пройдите короткий опрос и получите
                         <span>бонус</span> при заказе сайта
                     </p>
-                    <button class="button">Пройти опрос</button>
+                    <button class="button" onclick="window.location.href='#quiz'">Пройти опрос</button>
                 </div>
             </section>
 
-            <section class="answers">
+            <section class="answers" id="answers">
                 <div class="answer__content container">
                     <h2 class="answers__title">Ответы на часто задаваемые вопросы</h2>
                     <details class="answers__item">
@@ -629,7 +511,22 @@
             <a href="#">&copy;Web Stream</a>
             <p>Все права защищены</p>
         </footer>
-
+        <div class="popup">
+            <div class="popup__content">
+                <form action="POST">
+                    <h2>Мы связемся с Вами в ближайшее
+                        время</h2>
+                    <fieldset>
+                        <input type="text" placeholder="Имя" name="name">
+                        <input type="text" placeholder="Телефон*" name="tel">
+                    </fieldset>
+                    <button class="button">Отправить</button>
+                </form>
+                <div class="popup__closed">
+                    <span>&times;</span>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>
