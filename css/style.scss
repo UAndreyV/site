@@ -683,8 +683,12 @@ h3 {
     max-width: 1080px;
     background-color: var(--color-white);
     border-radius: 10px;
-    padding: 30px 30px;
+    padding: 30px 5px;
     box-sizing: border-box;
+
+    @media (min-width: 400px) {
+        padding: 30px 30px;
+    }
 
     & p,
     & label,
@@ -695,8 +699,11 @@ h3 {
     }
     & label {
         margin: 0px 0px 30px 0px;
-        padding: 0px 0px 0px 25px;
         position: relative;
+
+        @media (min-width: 400px) {
+            padding: 0px 0px 0px 25px;
+        }
     }
     & label::before {
         content: "";
@@ -732,7 +739,11 @@ h3 {
     }
 }
 ._contact input:not(:last-child) {
-    margin: 0px 0px 40px 15px;
+    margin: 0px 0px 40px 0px;
+
+    @media (min-width: 400px) {
+        margin: 0px 0px 40px 15px;
+    }
 }
 .quiz__item {
     display: flex;
@@ -756,21 +767,34 @@ h3 {
     flex-direction: column;
     justify-content: center;
     width: fit-content;
-    padding: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 5px;
+
+    @media (min-width: 400px) {
+        padding: 0px 0px 0px 30px;
+    }
 }
 .quiz__items input {
     border-radius: 10px;
     padding: 5px 15px;
-    margin: 0px 0px 10px 15px;
+    margin: 0px 0px 10px 0px;
     max-width: 270px;
     border: 1px #ccc solid;
     border-radius: 40px;
+
+    @media (min-width: 400px) {
+        margin: 0px 0px 10px 15px;
+    }
 }
 .quiz__control {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin: 40px 0px 0px 0px;
+
+    @media (min-width: 400px) {
+        flex-direction: row;
+    }
 }
 .quiz__status {
     flex: 1 1 auto;
@@ -858,17 +882,24 @@ h3 {
         max-width: 900px;
         margin: 0 auto;
         color: var(--color-white);
-        padding: 40px;
+        padding: 40px 5px;
         border-radius: 20px;
+
+        @media (min-width: 400px) {
+            padding: 40px;
+        }
     }
 
     // .get__item
 
     &__item {
-        display: flex;
-        justify-content: space-between;
         &:not(:last-child) {
             margin: 0px 0px 60px 0px;
+        }
+
+        @media (min-width: 660px) {
+            display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -899,12 +930,16 @@ h3 {
             &::after {
                 content: "";
                 position: absolute;
-                width: 30%;
+                width: 50%;
                 height: 3px;
                 left: 0;
                 bottom: -20px;
                 border-radius: 10px;
                 background-image: linear-gradient(to right, #c15bff 0%, #495aff 100%);
+
+                @media (min-width: 500px) {
+                    width: 30%;
+                }
             }
 
             & span {
@@ -949,10 +984,13 @@ h3 {
     margin: 0px 0px 40px 0px;
 }
 .advantages__items {
-    display: grid;
-    gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     margin: 0px 0px 50px 0px;
+
+    @media (min-width: 550px) {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    }
 }
 .advantages__item {
     list-style: none;
@@ -965,6 +1003,16 @@ h3 {
     border-radius: 15px;
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
     transition: all var(--time-trans) ease;
+
+    &:not(:last-child) {
+        margin: 0px 0px 50px 0px;
+    }
+
+    @media (min-width: 550px) {
+        &:not(:last-child) {
+            margin: 0px 0px 0px 0px;
+        }
+    }
 
     @media (min-width: 1024px) {
         border: 2px var(--color-gray-light) solid;

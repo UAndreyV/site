@@ -875,9 +875,15 @@ h3 {
   max-width: 1080px;
   background-color: var(--color-white);
   border-radius: 10px;
-  padding: 30px 30px;
+  padding: 30px 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (min-width: 400px) {
+  .quiz__field {
+    padding: 30px 30px;
+  }
 }
 
 .quiz__field p,
@@ -890,8 +896,13 @@ h3 {
 
 .quiz__field label {
   margin: 0px 0px 30px 0px;
-  padding: 0px 0px 0px 25px;
   position: relative;
+}
+
+@media (min-width: 400px) {
+  .quiz__field label {
+    padding: 0px 0px 0px 25px;
+  }
 }
 
 .quiz__field label::before {
@@ -935,7 +946,13 @@ h3 {
 }
 
 ._contact input:not(:last-child) {
-  margin: 0px 0px 40px 15px;
+  margin: 0px 0px 40px 0px;
+}
+
+@media (min-width: 400px) {
+  ._contact input:not(:last-child) {
+    margin: 0px 0px 40px 15px;
+  }
 }
 
 .quiz__item {
@@ -977,22 +994,38 @@ h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 5px;
+}
+
+@media (min-width: 400px) {
+  .quiz__items {
+    padding: 0px 0px 0px 30px;
+  }
 }
 
 .quiz__items input {
   border-radius: 10px;
   padding: 5px 15px;
-  margin: 0px 0px 10px 15px;
+  margin: 0px 0px 10px 0px;
   max-width: 270px;
   border: 1px #ccc solid;
   border-radius: 40px;
+}
+
+@media (min-width: 400px) {
+  .quiz__items input {
+    margin: 0px 0px 10px 15px;
+  }
 }
 
 .quiz__control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1000,6 +1033,15 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 40px 0px 0px 0px;
+}
+
+@media (min-width: 400px) {
+  .quiz__control {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .quiz__status {
@@ -1088,21 +1130,29 @@ h3 {
   max-width: 900px;
   margin: 0 auto;
   color: var(--color-white);
-  padding: 40px;
+  padding: 40px 5px;
   border-radius: 20px;
 }
 
-.get__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media (min-width: 400px) {
+  .get__content {
+    padding: 40px;
+  }
 }
 
 .get__item:not(:last-child) {
   margin: 0px 0px 60px 0px;
+}
+
+@media (min-width: 660px) {
+  .get__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .get__container-img {
@@ -1137,7 +1187,7 @@ h3 {
 .get__description h3::after {
   content: "";
   position: absolute;
-  width: 30%;
+  width: 50%;
   height: 3px;
   left: 0;
   bottom: -20px;
@@ -1146,6 +1196,12 @@ h3 {
   background-image: -webkit-linear-gradient(left, #c15bff 0%, #495aff 100%);
   background-image: -o-linear-gradient(left, #c15bff 0%, #495aff 100%);
   background-image: linear-gradient(to right, #c15bff 0%, #495aff 100%);
+}
+
+@media (min-width: 500px) {
+  .get__description h3::after {
+    width: 30%;
+  }
 }
 
 .get__description h3 span {
@@ -1197,12 +1253,17 @@ h3 {
 }
 
 .advantages__items {
-  display: -ms-grid;
-  display: grid;
-  gap: 50px;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin: 0px 0px 50px 0px;
+}
+
+@media (min-width: 550px) {
+  .advantages__items {
+    display: -ms-grid;
+    display: grid;
+    gap: 50px;
+    -ms-grid-columns: (minmax(296px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  }
 }
 
 .advantages__item {
@@ -1224,6 +1285,16 @@ h3 {
   -webkit-transition: all var(--time-trans) ease;
   -o-transition: all var(--time-trans) ease;
   transition: all var(--time-trans) ease;
+}
+
+.advantages__item:not(:last-child) {
+  margin: 0px 0px 50px 0px;
+}
+
+@media (min-width: 550px) {
+  .advantages__item:not(:last-child) {
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 @media (min-width: 1024px) {
