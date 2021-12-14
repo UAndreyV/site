@@ -372,7 +372,7 @@ h3 {
     display: none;
     position: relative;
     width: 50%;
-    @media (min-width: 740px) {
+    @media (min-width: 840px) {
         display: block;
     }
 }
@@ -699,11 +699,8 @@ h3 {
     }
     & label {
         margin: 0px 0px 30px 0px;
+        padding: 0px 0px 0px 25px;
         position: relative;
-
-        @media (min-width: 400px) {
-            padding: 0px 0px 0px 25px;
-        }
     }
     & label::before {
         content: "";

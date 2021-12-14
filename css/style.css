@@ -479,7 +479,7 @@ h3 {
   width: 50%;
 }
 
-@media (min-width: 740px) {
+@media (min-width: 840px) {
   .header__image {
     display: block;
   }
@@ -896,13 +896,8 @@ h3 {
 
 .quiz__field label {
   margin: 0px 0px 30px 0px;
+  padding: 0px 0px 0px 25px;
   position: relative;
-}
-
-@media (min-width: 400px) {
-  .quiz__field label {
-    padding: 0px 0px 0px 25px;
-  }
 }
 
 .quiz__field label::before {
